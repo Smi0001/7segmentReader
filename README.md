@@ -1,7 +1,7 @@
 # 7segmentReader
 Tool to read 7 segment from uploaded file and download converted readable form
 
-#Strategy of conversion
+# Strategy of conversion
 **7 segments digits are:**
 ```
  _ 
