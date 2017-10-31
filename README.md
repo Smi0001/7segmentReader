@@ -178,12 +178,10 @@ similarly 3rd line:
  ' _|'
 ]
 ```
-concatenate serially,
+**concatenate serially**
 ```
 now numArray [0 to 9] is having codes of each number as an array
 check *getNum(numArray[i])* for each & get the num, & write on new file sequentially for each lines
 this was assuming every input is valid.
 
 If input are not valid, then for *getNum(numArray[i]) == undefined* write any other special character for invalid *(say '?' for unknown)*
-
-
