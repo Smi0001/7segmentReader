@@ -12,6 +12,7 @@ converterApp.directive('convertDiv', function() {
 		scope: {message: '@'},
 		controller: ['$scope', 'fileService', function($scope, fileService) {
 			$scope.convert = function() {
+				$('#j-convert-div button').removeClass('enabled').attr('disabled',true);
 				var file = $('#j-uploaded-file')[0].files[0];
 				$('#j-download-file').hide();
 				$('#j-loader').show();

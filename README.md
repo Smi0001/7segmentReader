@@ -1,3 +1,29 @@
+
+Solution for Marco Polo Instructions:
+=====================================
+
+function marcopolo() {
+  var arr = [];
+  for(var i = 1; i <= 100; i++) {
+    if (i%(7*4) == 0) arr.push('marcopolo');
+    else if (i%4 == 0) arr.push('marco');
+    else if (i%7 == 0) arr.push('polo');
+    else arr.push(i);
+  }
+  return arr.join(',');
+}
+
+
+How can you limit the scope on a directive and why would you do this?
+=====================================================================
+The scope on a directive can be limited by creating it as an isolated scope. It is created by defining "scope : {}" in a directive definition, in this way it is completely detached from its parent scope.
+
+While making custom directive, we may need to have a complete independent scope that is generic and can be used anywhere in the application (independent of parent scope). In this case we need to limit the scope by isolating it.
+
+
+
+
+
 # 7segmentReader
 Tool to read 7 segment from uploaded file and download converted readable form
 
@@ -82,10 +108,11 @@ parse at 3 chars & fill array
 |_||_||_|  |  | _|  | _| _|
 "
 
+parse at 3-3 chars for 3 times(lines) to store as 9 elements in an array numArray
+
 1st line:
 " _  _  _        _     _  _ "
 
-parse at 3 chars: A1 =
 [
  ' _ ',
  ' _ ',
@@ -101,7 +128,7 @@ parse at 3 chars: A1 =
 similarly 2nd line:
 "|_ | || |  ||_| _|  ||_ |_ "
 
-parse at 3 chars: A2 =
+(this will concatenate to previous respective index)
 [
  '|_ ',
   '| |',
@@ -117,8 +144,7 @@ parse at 3 chars: A2 =
 similarly 3rd line:
 "|_||_||_|  |  | _|  | _| _|"
 
-parse at 3 chars: A3=
-
+(this will concatenate to previous respective index)
 [
  '|_|',
  '|_|',
@@ -132,9 +158,8 @@ parse at 3 chars: A3=
 ]
 ```
 concatenate serially,
-```numArray.push( A1 [0] + A2 [0] + A3[0] )	=	' _ ', '|_ ', '|_|' 	=	' _ |_ |_|'```
-similarly push for i = 0 to 9
-now numArray is having codes of each number as an array
+```
+now numArray [0 to 9] is having codes of each number as an array
 check *getNum(numArray[i])* for each & get the num, & write on new file sequentially for each lines
 this was assuming every input is valid.
 
