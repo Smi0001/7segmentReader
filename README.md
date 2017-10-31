@@ -1,7 +1,7 @@
 
 Solution for Marco Polo Instructions:
 =====================================
-
+```
 function marcopolo() {
   var arr = [];
   for(var i = 1; i <= 100; i++) {
@@ -12,15 +12,32 @@ function marcopolo() {
   }
   return arr.join(',');
 }
-
+```
 
 How can you limit the scope on a directive and why would you do this?
 =====================================================================
+```
 The scope on a directive can be limited by creating it as an isolated scope. It is created by defining "scope : {}" in a directive definition, in this way it is completely detached from its parent scope.
 
 While making custom directive, we may need to have a complete independent scope that is generic and can be used anywhere in the application (independent of parent scope). In this case we need to limit the scope by isolating it.
+```
 
 
+# Steps to Setup the Project:
+
+1. Download the project from https://github.com/Smi0001/task-discussion
+2. This project need Node.js (if it is not yet installed, please install it from https://nodejs.org/en/download )
+3. Open Node.JS command prompt, move to destination directory (to execute npm commands)
+```
+    For example the project folder task-discussion is located at "C:\7segmentReader"
+    Then enter "cd C:\7segmentReader" (press enter) 
+```
+4. Enter **npm install** (press enter, this will install all dependencies of the project, and it would be ready to run).
+
+# Step to Run the Project:
+
+1.    Open Node.JS command prompt and execute **node index.js**
+2.    After this message - *Server listening on port 5000*, open the browser, the project is available at **http://localhost:5000**
 
 
 
