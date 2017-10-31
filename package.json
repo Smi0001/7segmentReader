@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "7 segment reader converts to readable form",
   "main": "index.js",
+  "scripts": {
+     "start": "node index.js"
+     "test": "karma start"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "express-fileupload": "^0.3.0"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": ""
+  "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-mocks": "^1.6.6",
+    "angular-ui-router": "^0.4.3",
+    "jasmine-core": "^2.8.0",
+    "karma": "^0.12.37",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-jasmine": "^0.3.8"
   },
   "keywords": [
     "node",
