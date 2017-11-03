@@ -4,7 +4,7 @@
   "description": "7 segment reader converts to readable form",
   "main": "index.js",
   "scripts": {
-     "start": "node index.js"
+     "start": "node index.js",
      "test": "karma start"
   },
   "dependencies": {
