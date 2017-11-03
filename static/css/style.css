@@ -57,7 +57,7 @@ input {
 }
 .download {
     height: 45px;
-    margin: 10px 15px;
+    margin: 15px;
     width: 45px;
     opacity: 1;
     cursor: pointer;
