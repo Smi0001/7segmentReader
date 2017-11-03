@@ -43,7 +43,7 @@ app.use('/static', express.static(staticURL))
 });
 
 
-var server = app.listen(4000, function(){
+var server = app.listen(process.env.PORT || 4000, function(){
   console.log('Server listening on port 4000');
 });
 
